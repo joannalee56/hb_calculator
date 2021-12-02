@@ -7,7 +7,9 @@ calculator_on = True
 result = None
 
 while(calculator_on):
-    token = input("Enter calculation: ").split(' ')[0:3]
+    token = input("Enter calculation: ").split(' ')
+    nums = token[1:]
+
     x = int(token[1])
     
     if len(token) == 2:
@@ -21,20 +23,20 @@ while(calculator_on):
         calculator_on = False
     else:
         if token[0] == "+":
-            result = add(x, y)
+            result = add(nums)
         elif token[0] == "-":
-            result = subtract(x,y)
+            result = subtract(nums)
         elif token[0] == "*":
-            result = multiply(x,y) 
+            result = multiply(nums) 
         elif token[0] == "/":
-            result = divide(x,y)
+            result = divide(nums)
         elif token[0] == "sq":
-            result = square(x)
+            result = square(nums)
         elif token[0] == "cube":
-            result = cube(x)
+            result = cube(nums)
         elif token[0] == "**":
-            result = power(x, y)
+            result = power(nums)
         elif token[0] == "%":
-            result = mod(x, y)
+            result = mod(nums)
             
     print(result)
