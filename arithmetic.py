@@ -1,6 +1,40 @@
 """Functions for common math operations."""
 
+#Functions for reduce
+def add2(num1, num2):
+    return num1 + num2
 
+def subtract2(num1, num2):
+    """Return the value of num1 minus num2."""
+    return num1 - num2
+
+def multiply2(num1, num2):
+    """Multiply the num1 by num2 and return the result."""
+    return num1 * num2
+
+def divide2(num1, num2):
+    """Divide the num1 by num2, returning a floating point."""
+    return num1 / num2
+
+def square2(num1):
+    """Return the square of num1."""
+    return num1 * num1
+
+def cube2(num1):
+    """Return the cube of num1."""
+    return num1 * num1 * num1
+
+def power2(num1, num2):
+    """Raise num1 to the power of num2 and return the value."""
+    return num1 ** num2
+
+def mod2(num1, num2):
+    """Return the remainder of num1 / num2."""
+    return num1 % num2
+
+
+
+# We wrote out the functions for additional integers
 def add(nums):
     """Return the sum of integers."""
     result = 0
