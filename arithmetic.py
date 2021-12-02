@@ -10,7 +10,7 @@ def add(nums):
 
 
 def subtract(nums):
-    """Return the second number subtracted from the first."""
+    """Return the subtractration of integers."""
     result = int(nums[0])
     for num in nums[1:]: 
         result -= int(num)
